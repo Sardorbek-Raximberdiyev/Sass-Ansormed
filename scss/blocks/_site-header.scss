@@ -62,6 +62,8 @@
 @media only screen and (max-width: 520px) {
   .site-header__button {
     display: none;
+    font-size: 14px;
+    line-height: 1.2;
   }
 
   .site-header-open .site-header__container::before {

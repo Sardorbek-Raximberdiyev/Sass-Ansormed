@@ -1,0 +1,64 @@
+.contact {
+  background-color: $hero-bg-color;
+}
+
+.contact__container {
+  max-width: 488px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  font-family: $font-roboto-condensed;
+}
+
+.contact__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+}
+
+.contact__block-link {
+  display: flex;
+}
+
+.contact__link {
+  border-color: #fff;
+  color: #fff;
+  transition: background-color 0.3s ease, border 0.3s ease;
+
+  &:first-child {
+    margin-right: 16px;
+  }
+
+  &:hover {
+    background-color: $hover-color;
+    border-color: $hover-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact__block-link {
+    flex-direction: column;
+  }
+
+  .contact__link {
+    width: 100%;
+
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
