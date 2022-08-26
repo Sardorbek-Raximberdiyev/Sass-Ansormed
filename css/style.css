@@ -401,6 +401,7 @@ template {
   flex-shrink: 0;
   color: #222;
   font-weight: 600;
+  font-size: 24px;
   font-family: "Open sans";
   text-decoration: none;
   transition: color 0.3s ease;
@@ -888,7 +889,7 @@ template {
   padding-bottom: 24px;
 }
 
-.site-footer__logo-link span {
+.site-footer__logo-link {
   color: #fff;
 }
 
@@ -911,6 +912,7 @@ template {
   line-height: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 .site-footer__link:hover {
   color: #de2e54;
@@ -932,6 +934,7 @@ template {
     flex-direction: column;
   }
   .site-footer__logo-link {
+    display: inline-block;
     margin-bottom: 20px;
   }
   .site-footer__item:not(:last-child) {
