@@ -1,0 +1,49 @@
+.sitenav {
+  margin-right: 15px;
+}
+
+.sitenav__list {
+  @include list;
+  display: flex;
+}
+
+.sitenav__item {
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.sitenav__link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-family: $font-open-sans;
+  color: $title-color;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $hover-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .sitenav__list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .sitenav__item {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  }
+}

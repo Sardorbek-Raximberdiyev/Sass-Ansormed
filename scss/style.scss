@@ -1,4 +1,6 @@
-@use "general";
-@use "mixins";
-@use "normalize";
-@use "blocks/blocks";
+@charset "utf-8";
+@import "general";
+@import "mixins";
+@import "normalize";
+@import "variables";
+@import "blocks/blocks";
