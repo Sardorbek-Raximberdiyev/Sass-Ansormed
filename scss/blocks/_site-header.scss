@@ -1,3 +1,7 @@
+.site-header {
+  position: relative;
+}
+
 .site-header__container {
   display: flex;
   align-items: center;
@@ -26,11 +30,10 @@
 
 @media  only screen and (max-width: 1000px) {
   .site-header-open .site-header__container::before {
-    position: fixed;
+    position: absolute;
     top: 90px;
     right: 20px;
     border-radius: 12px;
-    // border: 1px solid #000;
     width: 250px;
     height: 300px;
     background-color: #fff;
@@ -62,11 +65,12 @@
   }
 
   .site-header-open .site-header__container::before {
+    position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     border: none;
     width: 100%;
-    height: 100%
+    height: 100%;
   }
 
   .site-header-open .site-header__sitenav {
